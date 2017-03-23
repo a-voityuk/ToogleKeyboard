@@ -1,27 +1,27 @@
-# togglekeyboard Module
+# tooglekeyboard Module
 
 ## Description
 
 TODO: Enter your module description here
 
-## Accessing the togglekeyboard Module
+## Accessing the tooglekeyboard Module
 
 To access this module from JavaScript, you would do the following:
 
-    var togglekeyboard = require("ct.tooglekeyboard");
+    var tooglekeyboard = require("ct.tooglekeyboard");
 
-The togglekeyboard variable is a reference to the Module object.
+The tooglekeyboard variable is a reference to the Module object.
 
 ## Reference
 
 TODO: If your module has an API, you should document
 the reference here.
 
-### togglekeyboard.function
+### tooglekeyboard.function
 
 TODO: This is an example of a module function.
 
-### togglekeyboard.property
+### tooglekeyboard.property
 
 TODO: This is an example of a module property.
 

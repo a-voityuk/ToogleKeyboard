@@ -12,21 +12,34 @@ import org.appcelerator.kroll.KrollModule;
 import org.appcelerator.kroll.annotations.Kroll;
 
 import org.appcelerator.titanium.TiApplication;
-//import org.appcelerator.kroll.common.Log;
-//import org.appcelerator.kroll.common.TiConfig;
+import org.appcelerator.kroll.common.Log;
+import org.appcelerator.kroll.common.TiConfig;
 
 import android.content.Context;
 import android.view.inputmethod.InputMethodManager;
 
-@Kroll.module(name="Togglekeyboard", id="ct.tooglekeyboard")
-public class TogglekeyboardModule extends KrollModule
-{
-	// Standard Debugging variables
-	//private static final String LCAT = "TogglekeyboardModule";
 
-	public TogglekeyboardModule()
+@Kroll.module(name="Tooglekeyboard", id="ct.tooglekeyboard")
+public class TooglekeyboardModule extends KrollModule
+{
+
+	// Standard Debugging variables
+	private static final String LCAT = "TooglekeyboardModule";
+	private static final boolean DBG = TiConfig.LOGD;
+
+	// You can define constants with @Kroll.constant, for example:
+	// @Kroll.constant public static final String EXTERNAL_NAME = value;
+
+	public TooglekeyboardModule()
 	{
 		super();
+	}
+
+	@Kroll.onAppCreate
+	public static void onAppCreate(TiApplication app)
+	{
+		Log.d(LCAT, "inside onAppCreate");
+		// put module init code that needs to run when the application is created
 	}
 
 	// Methods
@@ -47,7 +60,8 @@ public class TogglekeyboardModule extends KrollModule
 		InputMethodManager manager = (InputMethodManager)context.getSystemService(Context.INPUT_METHOD_SERVICE);
 		manager.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY, 0);
 
-		return "hidde";
+		return "hide";
 	}
+
 }
 

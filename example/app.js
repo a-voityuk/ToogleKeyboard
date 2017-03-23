@@ -13,16 +13,16 @@ win.add(label);
 win.open();
 
 // TODO: write your module tests here
-var togglekeyboard = require('ct.tooglekeyboard');
-Ti.API.info("module is => " + togglekeyboard);
+var tooglekeyboard = require('ct.tooglekeyboard');
+Ti.API.info("module is => " + tooglekeyboard);
 
-label.text = togglekeyboard.example();
+label.text = tooglekeyboard.example();
 
-Ti.API.info("module exampleProp is => " + togglekeyboard.exampleProp);
-togglekeyboard.exampleProp = "This is a test value";
+Ti.API.info("module exampleProp is => " + tooglekeyboard.exampleProp);
+tooglekeyboard.exampleProp = "This is a test value";
 
 if (Ti.Platform.name == "android") {
-	var proxy = togglekeyboard.createExample({
+	var proxy = tooglekeyboard.createExample({
 		message: "Creating an example Proxy",
 		backgroundColor: "red",
 		width: 100,
